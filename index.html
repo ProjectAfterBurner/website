@@ -1,21 +1,23 @@
-<!--haccing skills #1: view page source-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A sus OS for aSUS computers.">
-    <meta name="keywords" content="amogos,amog os,amongos,amogus,among us">
+    <meta name="description" content="Blazingly Fast Distro for ARM">
+    <meta name="keywords" content="afterburner,after burner,projectafterburner,project afterburner,project afterburner rpi">
     <meta name="theme-color" content="#66ddcc">
-    <meta property="og:site_name" content="AmogOS">
-    <meta name="og:title" content="AmogOS | Home">
-    <meta name="og:description" content="A sus OS for aSUS computers.">
-    <meta name="og:image" itemprop="image" content="https://amogos.studio/icons/sus.png">
-    <link rel="shortcut icon" href="icons/sus.ico" sizes="32x32">
-    <link rel="bookmark" href="icons/sus.ico">
+    <meta property="og:site_name" content="Project Afterburner">
+    <meta name="og:title" content="Afterburner | Home">
+    <meta name="og:description" content="Blazingly Fast Distro for ARM">
+    <meta name="og:image" itemprop="image" content="https://afterburner.mod.land/images/logo.png">
+    <link rel="shortcut icon" href="images/logo.ico" sizes="32x32">
+    <link rel="bookmark" href="images/logo.ico">
     <link href="common.css" rel="stylesheet" type="text/css">
-    <title>AmogOS | Sussy wussy.</title>
+    <title>Afterburner</title>
+
+    <meta name="google-site-verification" content="uJEBljaCJelfWVSaKUVvMq_cxCXTNImiiQG1d2UjB7g" />
+    
     <style>
         body{
             background-repeat: no-repeat;
@@ -133,11 +135,10 @@
         <header>
             <nav>
                 <ul id="bar">
-                    <li><a id="nav-logo" href="https://amogos.studio"></a></li>
+                    <li><a id="nav-logo" href="https://afterburner.mod.land"></a></li>
                     <li><a id="nav-home" class="now" href="index.html">Home</a></li>
-                    <li><a id="nav-install" href="install.html">Install</a></li>
+                    <li><a id="nav-download" href="download.html">Install</a></li>
                     <li><a id="nav-about" href="about.html">About</a></li>
-                    <li><a id="nav-donate" href="donate.html">Donate</a></li>
                 </ul>
             </nav>
         </header>
@@ -146,7 +147,7 @@
                 <span id="text-logo">Project Afterburner</span>
             </div>
             <div id="slogan-container">
-                <span id="slogan">Blazing fast OS mod for ARM systems (placeholder for now)</span>
+                <span id="slogan">The blazingly fast distro for ARM</span>
             </div>
         </div>
         <div id="download-container">
@@ -155,7 +156,7 @@
             <button id="github" class="buttons" onclick="github()">Visit our GitHub!</button>
         </div>
         <footer>
-            <p id="copyright">© 2021-2022 Afterburner</p>
+            <p id="copyright">© 2022 Project Afterburner</p>
         </footer>
     </div>
     </div>
@@ -163,17 +164,17 @@
         document.getElementById("download").innerHTML = "Download";
         
         function download(){
-            window.location.href = "downloads.html";
+            window.location.href = "download.html";
         }
         function discord(){
-            window.open("https://discord.gg/6ut87Hqukr");
+            window.open("https://discord.gg/xgXPwh5tqn");
         }
         function github(){
-            window.open("https://github.com/Amog-OS/AmogOS");
+            window.open("https://github.com/ProjectAfterBurner");
         }
 
         window.onload = function(){
-            document.body.style.backgroundImage = "url('icons/bg-1080p.jpg')";
+            document.body.style.backgroundImage = "url('images/bg-1080p.jpg')";
         }
         
         var secretNum = 0;
@@ -181,13 +182,10 @@
             secretNum += 1;
             if (secretNum == 10){
                 document.getElementById("slogan").innerHTML = "SUSSY";
-                document.getElementById("text-logo").innerHTML = "Sussy Baka";
-                document.body.style.backgroundImage = "url(icons/fongzoi.png)";
+                document.getElementById("text-logo").innerHTML = "You found the easter egg!";
+                document.body.style.backgroundImage = "url(images/banner.png)";
             }
         }
-
-        console.log("%c3yr old haccing skills #2: inspect elements and console", "color:blue; font-size:50px");
-        console.log("%cstop being s u s you little baka", "color:red; font-size:80px");
     </script>
 </body>
 </html>
