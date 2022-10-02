@@ -77,13 +77,20 @@
             border: 5px solid #66ddcc;
             z-index: 69;
         }
+
+        #discord{
+            background-image: linear-gradient(-30deg, #4e5d94, #7289da);
+        }
+        #discord:hover{
+            box-shadow: 0px 0px 12px #7289da;
+        }
     </style>
 </head>
 <body>
     <div id="main-container">
         <div id="downloads">
             <noscript><p style="font-size: 26px; margin-top: 24px;">Enable js or nooz come 2 ur house at 3 am <hr></p></noscript>
-            <p style="font-size: 36px; margin-top: 24px;">Choose your version.</p>
+            <p style="font-size: 36px;">Choose your version.</p>
             <p style="margin-top: 36px">Not sure how to install the distro? Join our <a href="https://discord.gg/xgXPwh5tqn" target="_blank" rel="noopener noreferrer">Discord server</a>!</p>
             <br/>
             <div id="columns">
@@ -93,9 +100,11 @@
                     <!-- <img src="icons/download/x64_direct.png" alt="x64 version Baka" width="135px"> -->
                     <p>Username: <code>pi</code></p>
                     <p>Password: <code>raspberry</code></p>
-                    <br/>
                     <button onclick="button('https\://drive.google.com/file/d/1yRATUUBqC_9yg_ER74UujJvZah095wWA/view?usp=sharing')" class="buttons">Direct Download</button>
-                    <button onclick="button('https\://drive.google.com/file/d/12xiRagXaCqMtvHsSl7xNElxJyKa0dj3i/view?usp=sharing')" class="buttons">Retropie Only (No DE)</button>
+                    <br/>
+                    <p>Retropie and Kodi-only fork</p>
+                        <p>(No Desktop Enviroment!!)</p>
+                    <button onclick="button('https\://drive.google.com/file/d/12xiRagXaCqMtvHsSl7xNElxJyKa0dj3i/view?usp=sharing')" class="buttons">Retropie Build</button>
                 </div>
                 <div class="columns">
                     <p class="column-title">Radxa</p>
@@ -103,7 +112,6 @@
                     <!-- <img src="icons/download/RPI_direct.png" alt="RPI version Sussy" width="135px"> -->
                     <p>Username: <code>pi</code></p>
                     <p>Password: <code>armbian</code></p>
-                    <br/>
                     <button onclick="button('https\://drive.google.com/file/d/1dJUPC7YBc3us2-KPzFIb3sm4_G_3Lwhp/view?usp=sharing')"  class="buttons downloadButtons">RockPi 4</button>
                     <br/>
                     <p>Based on Armbian 22.08</p>
@@ -111,12 +119,21 @@
                     <p>Password: <code>armbian</code></p>
                     <button onclick="button('https\://drive.google.com/file/d/1cmYpThzEVXz82yHExG3zbDbTs_Yo6kjX/view?usp=sharing')"  class="buttons downloadButtons">RockPi 5</button>
                 </div>
+                <div class="Other">
+                    <p class="column-title">Other</p>
+                    <p>Special versions for</p>
+                        <p>platforms like the PS4/5</p>
+                        <p>and custom Youtuber builds</p>
+                        <p>are on our Discord server!</p>
+                    <br/>
+                    <button id="discord" onclick="button('https\://discord.gg/emhy7CG9KN')"  class="buttons downloadButtons">Join Our Discord</button>
+                </div>
                 <!-- <p class="column-title"><img src="icons/anime.png" width="300px" alt="w"><br/>We dont have a AmogOS-chan right now. So enjoy this.</p> -->
             </div>
             <br/><br/><br/>
         </div>
         <footer>
-            <p id="copyright">© 2021-2022 AmogOS Project. All Suspiciousness Reserved.</p>
+            <p id="copyright">© 2022 Project Afterburner</p>
         </footer>
     </div>
     <div id="show">
